@@ -89,7 +89,7 @@ $ ./checkAA_reads.sh -circReads examples/CIRI_positive.txt -genome /path/to/GRCh
 ```
 Input format (e.g. CIRI_positive.txt)
 
-|circID | Strand | Gene name | Number of supported junction reads | IDs of supported junction reads |
+|circRNA_ID | strand | gene_id | #junction_reads | junction_reads_ID |
 |-------|--------|-----------|------------------------------------|---------------------------------|
 |chr1:8928047\|8932045|		-|	ENSG00000074800.9,|	3|	simulate:21841,simulate:21844,simulate:21846,|
 
