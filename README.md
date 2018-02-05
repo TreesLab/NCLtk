@@ -32,6 +32,7 @@ $ chmod +x *
 
 #### 3. Installation external tools
 (1) BLAT (http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/blat/)
+
 (2) seqtk (https://github.com/lh3/seqtk)
 
 #### 4. Preparation
