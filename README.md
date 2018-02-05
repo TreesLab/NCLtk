@@ -16,7 +16,7 @@
       ##### to detect alternative co-linear explanation ovelapped more than 80% of the concatenated seq
   + multiple hits
      ##### to mapped to multiple positions with similiar BLAT mapping scores (difference of mapping scores < 5)
-
+----------------------------------------------------------
 #### 1. System requirements 
 The two shell scripts (check_circRNAs.sh and check_reads.sh) runs under Linux-like environment (i.e. Bio-Linux, also see http://environmentalomics.org/bio-linux/) with at least 30 GB RAM. 
 
