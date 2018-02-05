@@ -1,5 +1,6 @@
 # NCLtk
 #### a toolkit to examine ambiguous alignment in non-co-linear trascripts (circular RNAs and trans-splicing)
+--------------------------------------------------
 ### two modules
 ##### 1. checking ambiguous alignment in the genomic positions of circRNAs (checkAA_circRNAs.sh):
 ##### to concatenate the flanking the circRNAs (within -100 nucleotides to +100 nucleotides for each circRNA's junction) against the reference genome and NCBI Refseq-/GENCODE-/Ensembl- identified mRNAs and ncRNAs using BLAT.
@@ -48,7 +49,7 @@ $ gunzip GRCh37.p13.genome.fa.gz
 ```
 (3) Transcritome files
 ```
-$ mkir others
+$ mkdir others
 $ cd others
 $ wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.pc_transcripts.fa.gz
 $ wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.lncRNA_transcripts.fa.gz
