@@ -72,7 +72,7 @@ $ ./checkAA_circRNAs.sh -circRNAs examples/circ1046.txt -thread 6 -genome /path/
 ```
 Input format (e.g. circ1046.txt)
 
-|circID                 | strand|
+|circRNA_ID                 | strand|
 |-----------------------|-------|
 |chr1:93297917\|93307481 | + |
 |chr1:52954581\|53019130 | - |
