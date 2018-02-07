@@ -69,7 +69,7 @@ $ ./checkAA_circRNAs.sh -circRNAs [circRNAs.txt] -thread [number of threads] -ge
 ```
 An example:
 ```sh
-$ ./checkAA_circRNAs.sh -circRNAs examples/circ1046.txt -thread 6 -genome /path/to/GRCh37.p13.genome.fa -genome_chr /path/to/hg19/ -others /path/to/others/ -blat /path/to/blat -tools /path/to/bin/
+$ ./checkAA_circRNAs.sh -circRNAs examples/circ1046.txt -thread 6 -genome /path/to/GRCh37.p13.genome.fa -genome_chr /path/to/hg19/ -others /path/to/others/ -blat /path/to/blat -tools /path/to/NCLtk/bin/
 ```
 Input format (e.g. circ1046.txt)
 
@@ -86,7 +86,7 @@ $ ./checkAA_reads.sh -circReads [circReads.txt] -genome [genome.fa] -others [tra
 ```
 An example:
 ```sh
-$ ./checkAA_reads.sh -circReads examples/CIRI_positive.txt -genome /path/to/GRCh37.p13.genome.fa -others /path/to/others/ -read1 /path/to/pos_1.fastq.gz -read2 /path/to/pos_2.fastq.gz -blat /path/to/blat -seqtk /path/to/seqtk -tools /path/to/bin/
+$ ./checkAA_reads.sh -circReads examples/CIRI_positive.txt -genome /path/to/GRCh37.p13.genome.fa -others /path/to/others/ -read1 /path/to/pos_1.fastq.gz -read2 /path/to/pos_2.fastq.gz -blat /path/to/blat -seqtk /path/to/seqtk -tools /path/to/NCLtk/bin/
 ```
 Input format (e.g. CIRI_positive.txt)
 
