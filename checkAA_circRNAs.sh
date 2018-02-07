@@ -9,7 +9,7 @@ case $key in
      shift
      ;; 
      -thread) 
-     Thread=$2
+     thread=$2
      shift
      ;; 
      -genome|) 
@@ -47,14 +47,7 @@ if [[ -z "$circRNAs" ]]; then
    exit
 fi
 
-
-circRNAs=circ1046.txt
-genome='/media/cswu/My Passport/PLoSComBio/genome_trpts/GRCh37.p13.genome.fa'
-genome_chr=/home/cswu/Desktop/blat_tools/Getseq/hg19
-others=/home/cswu/Desktop/PLoSComBio/comment_revise/others
-blat_dir=/home/cswu/Desktop/PLoSComBio/comment_revise/bin/blat
-tools_bin=/home/cswu/Desktop/PLoSComBio/comment_revise/bin
-
+nameout=$(echo $circRNAs | sed 's/\//\n/g' | tail -n 1)
 echo "Step1 : fetch flanking +- 100 read"
 cat $circRNAs | sed 's/\r//g' > circ.tmp1
 cat circ.tmp1 | awk '{print $1 "\t" $2}' | sed 's/:/\t/g' | sed 's/|/\t/g' > circ.tmp2 
@@ -114,4 +107,4 @@ join multipleHit.rG.GL.list colinear.clear.list -v1 | sed '/^$/d' > multipleHit.
 cat colinear.clear.list multipleHit.clear.list | sort | uniq > ambiguous_align_circRNAs.tmp
 cat ambiguous_align_circRNAs.tmp | grep '+' | sed 's/:/\t/g' | awk '{print $1 ":" $4 "|" $2 "\t" $3}' > ambiguous_align_circRNAs_sense.tmp
 cat ambiguous_align_circRNAs.tmp | grep '-' | sed 's/:/\t/g' | awk '{print $1 ":" $2 "|" $4 "\t" $3}' > ambiguous_align_circRNAs_antisense.tmp
-cat ambiguous_align_circRNAs_sense.tmp ambiguous_align_circRNAs_antisense.tmp | sort -k1,1 > ambiguous_align_$circRNAs
+cat ambiguous_align_circRNAs_sense.tmp ambiguous_align_circRNAs_antisense.tmp | sort -k1,1 > ambiguous_align_$nameout
