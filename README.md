@@ -25,8 +25,7 @@ The two shell scripts (check_circRNAs.sh and check_reads.sh) runs under Linux-li
 $ tar zxvf NCLtk.tar.gz
 $ cd NCLtk
 $ chmod +x *.sh
-$ cd bin
-$ make 
+$ cd bin 
 $ chmod +x *
 ```
 
@@ -40,7 +39,7 @@ $ chmod +x *
 ```
 $ mkdir hg19
 $ cd hg19
-$ wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/*
+$ wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/*'
 $ gunzip *.gz
 ```
 (2) Genome fasta file 
