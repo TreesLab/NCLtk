@@ -53,7 +53,6 @@ $ mkdir others
 $ cd others
 $ wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.pc_transcripts.fa.gz
 $ wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.lncRNA_transcripts.fa.gz
-$ wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_19/gencode.v19.lncRNA_transcripts.fa.gz
 $ wget ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/mrna.fa.gz
 $ wget ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/refMrna.fa.gz
 $ wget ftp://ftp.ensembl.org/pub/grch37/release-91/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh37.cdna.all.fa.gz
