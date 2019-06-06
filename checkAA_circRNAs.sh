@@ -12,11 +12,11 @@ case $key in
      thread=$2
      shift
      ;; 
-     -genome|) 
+     -genome) 
      genome=$(readlink -f $2)
      shift
      ;; 
-     -genome_chr|) 
+     -genome_chr) 
      genome_chr=$(readlink -f $2)
      shift
      ;; 
