@@ -18,9 +18,11 @@
      ##### to mapped to multiple positions with similiar BLAT mapping scores (difference of mapping scores < 5)
 ----------------------------------------------------------
 ### Citation
+
 Chen C-Y, Chuang T-J (2019) Comment on "A comprehensive overview and evaluation of circular RNA detection tools". PLoS Comput Biol 15(5): e1006158. https://doi.org/10.1371/journal.pcbi.1006158
 
-Chen, C., Chuang, T. NCLcomparator: systematically post-screening non-co-linear transcripts (circular, trans-spliced, or fusion RNAs) identified from various detectors. BMC Bioinformatics 20, 3 (2019). https://doi.org/10.1186/s12859-018-2589-0
+Chen C-Y, Chuang T-J (2019) NCLcomparator: systematically post-screening non-co-linear transcripts (circular, trans-spliced, or fusion RNAs) identified from various detectors. BMC Bioinformatics 20, 3. https://doi.org/10.1186/s12859-018-2589-0
+
 ----------------------------------------------------------
 #### 1. System requirements 
 The two shell scripts (check_circRNAs.sh and check_reads.sh) runs under Linux-like environment (i.e. Bio-Linux, also see http://environmentalomics.org/bio-linux/) with at least 30 GB RAM. 
